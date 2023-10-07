@@ -31,19 +31,6 @@ void input()
     cout<<"Enter string\n";
     cin>>s;
 }
-void replace(string &str,string ch,string substr) 
-{
-    if(ch!=substr)
-    {
-        size_t pos=0;
-        while((pos=str.find(ch,pos))!=string::npos) 
-        {
-            str.replace(pos,1,substr);
-            pos+=substr.length();
-        }
-    }
-    
-}
 bool check(string current,int index)
 {
     if(index>=current.length()) return false;
@@ -75,7 +62,7 @@ string derivation(string temp)
                 }
             }
             idx=derivations[i].find(str,idx+1);
-            replace(current,symbols[i],"");
+            current.replace(current.find(symbols[i]),symbols[i].length(),"");
             return current;
         }
     }
@@ -97,11 +84,9 @@ void leftDerivation()
         cout<<temp<<endl;
     }
 }
-
-
 int main()
 {
     input();
     leftDerivation();
-    rightDerivation();
+    //rightDerivation();
 }
