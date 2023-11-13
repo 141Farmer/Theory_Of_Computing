@@ -1,0 +1,4 @@
+f: https://github.com/ahmedfahad04/IIT-LAB/tree/main/3rd%20Semester%20Labs/SE312_%20Theory%20of%20Computing/Tasks
+h: https://github.com/Hasnain79-fury/TOC
+k: https://github.com/141Farmer/Theory_Of_Computing
+
